@@ -1,4 +1,5 @@
 {
+  "$schema": "https://ghps.cc/https://raw.githubusercontent.com/sovlookup/sovlookup/main/page.json",
   "globalStyle": {
     "backgroundColor": "@bgColor",
     "backgroundColorBottom": "@bgColorBottom",
@@ -6,17 +7,13 @@
     "backgroundTextStyle": "@bgTxtStyle",
     "navigationBarBackgroundColor": "#000000",
     "navigationBarTextStyle": "@navTxtStyle",
-    "navigationBarTitleText": "Starter-Uni",
+    "navigationBarTitleText": "白白真可爱",
     "navigationStyle": "custom"
   },
   "pages": [
-    { "path": "pages/splash/splash" },
     { "path": "pages/dashboard/dashboard" }
   ],
   "easycom": {
-    "autoscan": true,
-    "custom": {
-      "^U(.*)": "~/components/UnoUI/U$1/U$1.vue"
-    }
+    "autoscan": true
   }
 }
