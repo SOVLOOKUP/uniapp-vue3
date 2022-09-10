@@ -11,7 +11,9 @@
     "navigationStyle": "custom"
   },
   "pages": [
-    { "path": "pages/dashboard/dashboard" }
+    {
+      "path": "pages/dashboard/dashboard"
+    }
   ],
   "easycom": {
     "autoscan": true
