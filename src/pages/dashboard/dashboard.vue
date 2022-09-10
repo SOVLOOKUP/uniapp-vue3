@@ -4,15 +4,15 @@ const sms = ref('')
 </script>
 
 <template>
-  <van-cell-group inset class="pa-2">
-    <van-field v-model="phone" label="手机号" placeholder="请输入联系电话" />
-
-    <van-field v-model="sms" center clearable label="验证码" placeholder="请输入短信验证码">
-      <template #button>
-        <van-button size="small" type="primary">
-          获取验证码
-        </van-button>
-      </template>
-    </van-field>
-  </van-cell-group>
+  <view style="padding: 20px;">
+    <u-button type="primary" text="确定" />
+    <u-button type="primary" :plain="true" text="镂空" />
+    <u-button type="primary" :plain="true" :hairline="true" text="细边" />
+    <u-button type="primary" :disabled="true" text="禁用" />
+    <u-button type="primary" loading loading-text="加载中" />
+    <u-button type="primary" icon="map" text="图标按钮" />
+    <u-button type="primary" shape="circle" text="按钮形状" />
+    <u-button text="渐变色按钮" color="linear-gradient(to right, rgb(66, 83, 216), rgb(213, 51, 186))" />
+    <u-button type="primary" size="small" text="大小尺寸" />
+  </view>
 </template>

@@ -1,5 +1,10 @@
 {
   "$schema": "https://ghps.cc/https://raw.githubusercontent.com/sovlookup/sovlookup/main/page.json",
+  "easycom": {
+    "custom": {
+      "^u-(.*)": "uview-plus/components/u-$1/u-$1.vue"
+    }
+  },
   "globalStyle": {
     "backgroundColor": "@bgColor",
     "backgroundColorBottom": "@bgColorBottom",
@@ -14,8 +19,5 @@
     {
       "path": "pages/dashboard/dashboard"
     }
-  ],
-  "easycom": {
-    "autoscan": true
-  }
+  ]
 }
