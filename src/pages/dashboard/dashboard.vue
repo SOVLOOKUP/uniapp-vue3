@@ -13,6 +13,3 @@ onShow(() => {
     hello world
   </div>
 </template>
-
-<style scoped>
-</style>

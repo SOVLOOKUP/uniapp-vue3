@@ -1,12 +1,12 @@
 {
   "name": "白白",
-  "appid": "",
+  "appid": "baibaiappid",
   "description": "",
   "versionName": "0.1.0",
   "versionCode": "100",
   "transformPx": false,
   "mp-weixin": {
-    "appid": "wx59f6a03a5fe180ac",
+    "appid": "wx59f6a03a5fe180ab",
     "setting": {
       "urlCheck": false,
       "es6": true,
