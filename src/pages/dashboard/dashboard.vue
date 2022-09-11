@@ -1,18 +1,34 @@
 <script setup lang="ts">
-const phone = ref('')
-const sms = ref('')
+const phone = ref({
+  mobile: '',
+  sms: '',
+})
 </script>
 
 <template>
   <view style="padding: 20px;">
-    <u-button type="primary" text="确定" />
-    <u-button type="primary" :plain="true" text="镂空" />
-    <u-button type="primary" :plain="true" :hairline="true" text="细边" />
-    <u-button type="primary" :disabled="true" text="禁用" />
-    <u-button type="primary" loading loading-text="加载中" />
-    <u-button type="primary" icon="map" text="图标按钮" />
-    <u-button type="primary" shape="circle" text="按钮形状" />
-    <u-button text="渐变色按钮" color="linear-gradient(to right, rgb(66, 83, 216), rgb(213, 51, 186))" />
-    <u-button type="primary" size="small" text="大小尺寸" />
+    <u-input border="bottom" placeholder="请输入用户名">
+      <template #prefix>
+        <u--text type="info" size="18" text="用户名" />
+      </template>
+    </u-input>
+    <u-input border="bottom" placeholder="请输入验证码">
+      <template #prefix>
+        <u--text type="info" size="18" text="验证码" />
+      </template>
+      <template #suffix>
+        <u-code
+          ref="uCode"
+          seconds="20"
+          change-text="X秒重新获取哈哈哈"
+          @change="codeChange"
+        />
+        <u-button
+          text="获取验证码"
+          type="success"
+          @tap="getCode"
+        />
+      </template>
+    </u-input>
   </view>
 </template>
